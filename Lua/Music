@@ -1,1 +1,19 @@
+local newMusicId = "rbxassetid://ID
 
+local function removeSounds(container)
+    for _, obj in pairs(container:GetDescendants()) do
+        if obj:IsA("Sound") then
+            obj:Destroy()
+        end
+    end
+end
+
+removeSounds(workspace)
+removeSounds(game:GetService("SoundService"))
+
+local newSound = Instance.new("Sound")
+newSound.SoundId = newMusicId
+newSound.Looped = false
+newSound.Volume = 1
+newSound.Parent = game:GetService("SoundService")
+newSound:Play()
