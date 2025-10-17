@@ -32,14 +32,6 @@ for _, player in pairs(game.Players:GetPlayers()) do
     end
 end
 
-game.Players.PlayerAdded:Connect(function(player)
-    player.CharacterAdded:Connect(function(character)
-        for _, part in pairs(character:GetDescendants()) do
-            applyDecal(part)
-        end
-    end)
-end)
-
 workspace.DescendantAdded:Connect(function(obj)
     applyDecal(obj)
 end)
