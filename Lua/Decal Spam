@@ -33,5 +33,7 @@ for _, player in pairs(game.Players:GetPlayers()) do
 end
 
 workspace.DescendantAdded:Connect(function(obj)
-    applyDecal(obj)
+    if not obj:IsDescendantOf(game.Players) then
+        applyDecal(obj)
+    end
 end)
