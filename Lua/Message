@@ -1,7 +1,0 @@
-local mensagem = Instance.new("Message")
-mensagem.Text = "404 IS BACKKK"
-mensagem.Parent = game.Workspace
-
-wait(5)
-
-mensagem:Destroy()
