@@ -1,1 +1,12 @@
+for _, obj in pairs(workspace:GetChildren()) do
+    if obj:IsA("Sky") then
+        obj:Destroy()
+    end
+end
 
+local lighting = game:GetService("Lighting")
+for _, obj in pairs(lighting:GetChildren()) do
+    if obj:IsA("Sky") then
+        obj:Destroy()
+    end
+end
