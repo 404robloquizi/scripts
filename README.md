@@ -1,3 +1,2 @@
 # scripts
-variety of client and server side roblox scripts
-made by 404, enjoy
+variety of require scripts, and some hubs. made by 404, enjoy.
